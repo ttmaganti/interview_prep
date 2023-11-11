@@ -16,6 +16,7 @@ public class SubsetsOfSet {
 	
 	private static void printSubsets(int[] input, List<Integer> currentSet, int index) {
 		
+		
 		if(index == input.length) {
 			System.out.println(currentSet);
 			return;
