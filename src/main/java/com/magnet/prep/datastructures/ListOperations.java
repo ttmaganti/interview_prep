@@ -20,4 +20,25 @@ public class ListOperations {
 		}
 		return prev;
 	}
+	
+	// Time complexity O(n). Space Complexity O(1)
+	public ListNode removeNode(ListNode head, int n) {
+		ListNode left = head;
+		ListNode right = head;
+		
+		for(int i=0;i<n;i++) {
+			if(right.next != null)
+				right = right.next;
+		}
+		
+		while(right.next != null) {
+			right = right.next;
+			left = left.next;
+		}
+		
+		if(left.next != null && left.next.next != null)
+			left.next = left.next.next;
+		
+		return head;
+	}
 }
