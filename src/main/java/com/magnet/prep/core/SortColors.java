@@ -17,7 +17,7 @@ public class SortColors {
 			System.out.println(Arrays.toString(sortedColors));
 		}
 	}
-	
+	//Time complexity O(n). Space complexity O(1)
 	private static int[] sortColors(int[] colors) {
 		int red = 0;
 		int white = 0;
